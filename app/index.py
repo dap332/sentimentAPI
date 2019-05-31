@@ -36,4 +36,4 @@ def predict():
     return jsonify(predict_sentiment(req_data['texts']).tolist())
 
 
-app.run(host='0.0.0.0')
+app.run(host='0.0.0.0', port=8080)
